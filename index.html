@@ -32,7 +32,7 @@
             Cupcake ipsum dolor sit amet bear claw. Donut cotton candy donut cheesecake apple pie toffee donut.<br>
             Topping cupcake wafer gummies jelly-o lemon drops.
         </p>
-        <img src="img/marvel-yellow.png" class="bigass" alt="ms marvel"/>
+        <img src="img/marvel-yellow.png" id="bigass" class="bigass" alt="ms marvel" onmouseenter="show()" onmouseleave="hide()"/>
     </article>
 </main>
 <aside class="pre-footer">
@@ -57,5 +57,18 @@
         </span>
     </div>
 </footer>
+
+<script>
+    const bigass = document.getElementById('bigass')
+
+    function show() {
+        bigass.style.top = "0"
+    }
+
+    function hide() {
+        bigass.style.top = "7px"
+    }
+</script>
+
 </body>
 </html>
